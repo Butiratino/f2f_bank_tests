@@ -1,0 +1,26 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:api": "playwright test --grep @api",
+    "test:ui-suite": "playwright test --grep @ui",
+    "test:regression": "playwright test --grep @regression",
+    "test:smoke": "playwright test --grep @smoke --grep-invert @need2fix",
+    "test:need2fix": "playwright test --grep @need2fix",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,2 +1,9 @@
 .idea
 venv
+node_modules/
+playwright-report/
+test-results/
+__pycache__/
+.vs/
+.env
+*.env
